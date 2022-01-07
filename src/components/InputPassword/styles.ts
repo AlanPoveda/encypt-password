@@ -3,16 +3,18 @@ import styled from 'styled-components'
 
 export const InputPasswordStyle = styled.div`
     display: flex;
-    align-items: center;
     flex-direction: column;
+    margin-left:20%;
 
     input{
+        width: 15rem;
         padding: 1rem;
         border: 0.1rem solid var(--background-button-color);
         border-radius: 0.5rem;
     }
 
     button{
+        width: 10rem;
         background: var(--background-button-color);
         border: none;
         padding: 0.9rem;
@@ -20,7 +22,7 @@ export const InputPasswordStyle = styled.div`
 
         color: white;
 
-        margin: 0.5rem;
+        margin-top: 1rem;
 
         cursor: pointer;
 

@@ -16,7 +16,7 @@ export function InputPassword(){
     }
 
     function copyEncryptPassword(){
-        if(passwordEncrypt.length == 0) return setMessage("Input a valid password");
+        if(password.length == 0) return setMessage("Input a valid password");
         navigator.clipboard.writeText(passwordEncrypt);
         setMessage("Password Copied")  
         setTimeout(() => {setMessage("")}, 2000)   
