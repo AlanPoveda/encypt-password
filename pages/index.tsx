@@ -1,9 +1,9 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import { Header } from '../src/components/Header'
-
 import { GlobalStyle } from '../styles/global'
+
+import { Header } from '../src/components/Header'
+import { InputPassword } from '../src/components/InputPassword'
+
 
 const title = "Input your password 🔒"
 
@@ -12,6 +12,7 @@ const Home: NextPage = () => {
     <>
       <GlobalStyle />
       <Header title={title}/>
+      <InputPassword />
     </>
   )
 }
