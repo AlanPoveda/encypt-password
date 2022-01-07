@@ -8,6 +8,8 @@ export const InputPasswordStyle = styled.div`
 
     input{
         padding: 1rem;
+        border: 0.1rem solid var(--background-button-color);
+        border-radius: 0.5rem;
     }
 
     button{

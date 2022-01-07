@@ -9,12 +9,14 @@ export function InputPassword(){
     const [message, setMessage] = useState('');
     
     function generatePassword(){
+        if(password.length == 0) return setMessage("Input valid password");
         setEncryptPassword(sha512(password));     
         setMessage("Password generate")
         setTimeout(() => {setMessage("")}, 2000)
     }
 
     function copyEncryptPassword(){
+        if(passwordEncrypt.length == 0) return setMessage("Input valid password");
         navigator.clipboard.writeText(passwordEncrypt);
         setMessage("Password Copied")  
         setTimeout(() => {setMessage("")}, 2000)   
