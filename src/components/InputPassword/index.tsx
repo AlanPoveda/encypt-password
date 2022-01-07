@@ -1,11 +1,18 @@
 import { useState } from 'react'
 import { InputPasswordStyle } from './styles'
+import { sha512 } from "js-sha512"
+
 
 export function InputPassword(){
     const [password, setPassword] = useState('');
+    const [passwordEncrypt, setEncryptPassword] = useState('');
     
     function generatePassword(){
-        console.log(password);
+        setEncryptPassword(sha512(password));        
+    }
+
+    function copyEncryptPassword(){
+        navigator.clipboard.writeText(passwordEncrypt);    
     }
 
     return(
@@ -17,7 +24,7 @@ export function InputPassword(){
                 value={password}
             ></input>
             <button type="submit" onClick={generatePassword}>Generate</button>
-            <button type="button">Copy new password</button>
+            <button type="button" onClick={copyEncryptPassword}>Copy new password</button>
         </InputPasswordStyle>
     );
     
