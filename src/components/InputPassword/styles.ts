@@ -4,7 +4,6 @@ import styled from 'styled-components'
 export const InputPasswordStyle = styled.div`
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
 
     input{
@@ -22,6 +21,18 @@ export const InputPasswordStyle = styled.div`
         margin: 0.5rem;
 
         cursor: pointer;
+
+        transition: 0.2s;
+
+        :hover{
+            background: #57a0d3;
+        }
+    }
+
+    p{
+        color: #2FDD92;
+        font-size: 2rem;
+        padding-top: 2rem;
     }
 
 `

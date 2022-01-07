@@ -6,13 +6,18 @@ import { sha512 } from "js-sha512"
 export function InputPassword(){
     const [password, setPassword] = useState('');
     const [passwordEncrypt, setEncryptPassword] = useState('');
+    const [message, setMessage] = useState('');
     
     function generatePassword(){
-        setEncryptPassword(sha512(password));        
+        setEncryptPassword(sha512(password));     
+        setMessage("Password generate")
+        setTimeout(() => {setMessage("")}, 2000)
     }
 
     function copyEncryptPassword(){
-        navigator.clipboard.writeText(passwordEncrypt);    
+        navigator.clipboard.writeText(passwordEncrypt);
+        setMessage("Password Copied")  
+        setTimeout(() => {setMessage("")}, 2000)   
     }
 
     return(
@@ -25,6 +30,7 @@ export function InputPassword(){
             ></input>
             <button type="submit" onClick={generatePassword}>Generate</button>
             <button type="button" onClick={copyEncryptPassword}>Copy new password</button>
+            <p>{message}</p>
         </InputPasswordStyle>
     );
     
