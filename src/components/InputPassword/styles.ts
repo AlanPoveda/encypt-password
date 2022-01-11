@@ -10,13 +10,13 @@ export const InputPasswordStyle = styled.div`
         width: 15rem;
         padding: 1rem;
         border: 0.1rem solid var(--background-button-color);
-        border-radius: 0.5rem;
+        border-radius: 0.2rem;
     }
 
     button{
         width: 10rem;
         background: var(--background-button-color);
-        border: none;
+        border: 0.1rem solid var(--background-button-color);
         padding: 0.9rem;
         border-radius: 0.2rem;
 
@@ -26,10 +26,32 @@ export const InputPasswordStyle = styled.div`
 
         cursor: pointer;
 
-        transition: 0.2s;
+        transition: 0.4s;
 
         :hover{
-            background: #57a0d3;
+            background: white;
+            color: var(--background-button-color);
+        }
+    }
+
+    button[type='button'] {
+        width: 10rem;
+        background: white;
+        border: 0.1rem solid var(--background-button-color);
+        padding: 0.9rem;
+        border-radius: 0.2rem;
+
+        color: var(--background-button-color);
+
+        margin-top: 1rem;
+
+        cursor: pointer;
+
+        transition: 0.4s;
+
+        :hover{
+            background: var(--background-button-color);
+            color: white;
         }
     }
 
