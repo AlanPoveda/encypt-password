@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { InputPasswordStyle } from "./styles";
+import styles from './inputPassword.module.scss';
 import { sha512 } from "js-sha512";
 
 export function InputPassword() {
@@ -26,20 +26,20 @@ export function InputPassword() {
     }
 
     return (
-        <InputPasswordStyle>
+        <div className={styles.InputPasswordStyle}>
             <input
                 type="password"
                 placeholder="Enter Password"
                 onChange={(e) => setPassword(e.target.value)}
                 value={password}
             ></input>
-            <button type="submit" onClick={generatePassword}>
+            <button className={styles.generatedButton}type="submit" onClick={generatePassword}>
                 Generate
             </button>
             <button type="button" onClick={copyEncryptPassword}>
                 Copy new password
             </button>
             <p>{message}</p>
-        </InputPasswordStyle>
+        </div>
     );
 }
