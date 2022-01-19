@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background-button-color: #33C3F0;
+    --title-color: #222;
+}
+
+
+body, input, textarea, select, button, h1 {
+    font: 400 1rem "Roboto", sans-serif;
+}

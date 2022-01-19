@@ -1,14 +1,11 @@
 import styles from './header.module.scss';
 
-interface HeaderProps {
-    title: string;
-}
 
-export function Header(props: HeaderProps){
+
+export function Header(){
     return(
-        <header className={styles.HeaderStyle}>
-            <title>Encrypt password 🔒</title>
-            <h1>{props.title}</h1>
-        </header>
+        <div className={styles.HeaderStyle}>
+            <h1>Encrypt password 🔐</h1>
+        </div>
     );
 }
