@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import { GoogleAd } from "../components/GoogleAdsComponent";
 import { InputPassword } from "../components/InputPassword";
 
 
@@ -44,6 +45,8 @@ const Home: NextPage = () => {
             
             
             <InputPassword />
+
+            <GoogleAd />
             </>
     );
 };
