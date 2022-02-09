@@ -1,7 +1,6 @@
 import { useState } from "react";
 import styles from './inputPassword.module.scss';
 import { sha512 } from "js-sha512";
-
 export function InputPassword() {
     const [password, setPassword] = useState("");
     const [passwordEncrypt, setEncryptPassword] = useState("");

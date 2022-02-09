@@ -1,8 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { GoogleAd } from "../components/GoogleAdsComponent";
 import { InputPassword } from "../components/InputPassword";
-
+import { Content } from '../components/Content/index'
 
 const Home: NextPage = () => {
     return (
@@ -45,8 +44,8 @@ const Home: NextPage = () => {
             
             
             <InputPassword />
+            <Content />
 
-            <GoogleAd />
             </>
     );
 };
