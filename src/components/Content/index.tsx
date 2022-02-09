@@ -10,12 +10,12 @@ export const Content = () => {
                 use in other places.
             </p>
             <p>
-                Using the SHA-512 to encrypt the password, and it's very easy to
+                Using the SHA-512 to encrypt the password, and its very easy to
                 use and save. the information not save nowhere.
             </p>
             <p>
                 To use is simples, is only input the password, and click in the
-                button to encrypt. The content doesn't seem why not save the
+                button to encrypt. The content doesn’t seem why not save the
                 other form. Click in the other button com copy the password and
                 paste where you want.
             </p>
@@ -27,7 +27,7 @@ export const Content = () => {
                 but is more secure for use in your passwords
             </p>
             <p>
-                SHA-512 it's part of group of hashing algorithms called SHA-2,
+                SHA-512 it’s part of group of hashing algorithms called SHA-2,
                 using for bitcoin and blockchain hashing
             </p>
             <h2>Hashing Algorithm</h2>
